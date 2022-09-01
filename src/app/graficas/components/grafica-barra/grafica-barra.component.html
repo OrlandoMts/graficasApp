@@ -1,1 +1,10 @@
-<p>grafica-barra works!</p>
+<div style="display: block">
+    <canvas baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [type]="barChartType">
+    </canvas>
+  </div>
+  <button (click)="randomize()"
+           class="w-auto bg-[#3594d3] rounded-md text-white drop-shadow-xl p-1" >
+    Actualizar</button>
