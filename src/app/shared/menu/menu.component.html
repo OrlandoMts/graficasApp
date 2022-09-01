@@ -1,1 +1,8 @@
-<p>menu works!</p>
+<ul class="md:flex justify-around">
+    <li *ngFor="let i of menu"
+        [routerLink]="[i.ruta]"
+        class="cursor-pointer p-2 rounded-md w-auto drop-shadow-md"
+        routerLinkActive="bg-[#2BC642] text-white drop-shadow-xl" >
+        {{i.texto}}
+    </li>
+</ul>
