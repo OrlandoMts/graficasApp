@@ -5,7 +5,8 @@
 
 <div class="md:flex justify-around">
     <div>
-        <app-grafica-barra></app-grafica-barra>
+        <app-grafica-barra [horizontal]="true"
+                            [barChartData]="proveedoresData" ></app-grafica-barra>
     </div>
     <div>
         <app-grafica-barra></app-grafica-barra>

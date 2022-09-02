@@ -1,1 +1,25 @@
-<p>dona-http works!</p>
+<div class="mb-5">
+    <h2 class="text-2xl font-semibold">Gráfica de Dona con Data HTTP</h2>
+    <p class="text-lg font-semibold">Gráfica de Dona con Data HTTP</p>
+    <hr>
+</div>
+
+<div *ngIf="doughnutChartData.datasets.length === 0; else divGrafica">
+
+    <svg class="animate-spin h-5 w-5 mr-3 bg-indigo-500" viewBox="0 0 24 24">
+    </svg>
+    Cargando...
+        <!--  -->
+</div>
+
+<ng-template #divGrafica>
+
+    <div style="display: block" >
+        <canvas baseChart
+          [data]="doughnutChartData"
+    
+          [type]="doughnutChartType">
+        </canvas>
+      </div>
+      
+</ng-template>
