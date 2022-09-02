@@ -1,0 +1,15 @@
+<div class="mb-5">
+    <h2 class="text-2xl font-semibold">Gráfica de Barras</h2>
+    <hr>
+</div>
+
+<div style="display: block">
+    <canvas baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [type]="barChartType">
+    </canvas>
+  </div>
+  <button (click)="randomize()"
+           class="w-auto bg-[#3594d3] rounded-md text-white drop-shadow-xl p-2" >
+    Actualizar</button>
